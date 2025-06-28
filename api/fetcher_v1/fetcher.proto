@@ -4,7 +4,7 @@ package fetcher_v1;
 
 import "google/protobuf/empty.proto";
 
-option go_package = "github.com/noskov-sergey/hh-fethcer/pkg/fetcher_v1;fetcher_v1";
+option go_package = "github.com/noskov-sergey/hh-fethcer/pkg/fetcher;fetcher";
 
 service FetcherV1 {
   rpc UpdateToken(UpdateTokenRequest) returns (google.protobuf.Empty);

@@ -1,8 +1,8 @@
 generate-fetcher-api:
 	protoc --proto_path api/fetcher_v1 \
-	--go_out=pkg/fetcher_v1 --go_opt=paths=source_relative \
+	--go_out=pkg/fetcher --go_opt=paths=source_relative \
 	--plugin=protoc-gen-go=bin/protoc-gen-go.exe \
-	--go-grpc_out=pkg/fetcher_v1 --go-grpc_opt=paths=source_relative \
+	--go-grpc_out=pkg/fetcher --go-grpc_opt=paths=source_relative \
 	--plugin=protoc-gen-go-grpc=bin/protoc-gen-go-grpc.exe \
 	api/fetcher_v1/fetcher.proto
 
