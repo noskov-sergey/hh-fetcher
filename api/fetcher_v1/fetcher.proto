@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package fetcher_v1;
+
+import "google/protobuf/empty.proto";
+
+option go_package = "github.com/noskov-sergey/hh-fethcer/pkg/fetcher_v1;fetcher_v1";
+
+service FetcherV1 {
+  rpc UpdateToken(UpdateTokenRequest) returns (google.protobuf.Empty);
+}
+
+message UpdateTokenRequest {
+  string access_token = 1;
+  string jwt_token = 2;
+}
