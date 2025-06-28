@@ -4,7 +4,7 @@
 // - protoc             v5.27.0
 // source: fetcher.proto
 
-package fetcher_v1
+package fetcher
 
 import (
 	context "context"
